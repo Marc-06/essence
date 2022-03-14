@@ -9,12 +9,12 @@ README = ""
 
 # This call to setup() does all the work
 setup(
-    name="Prix-Carburant-FR-Client",
+    name="Prix-Carburant-FR-Client-v2",
     version="1.0.3",
     description="StationEssence client",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/ryann72/essence",
+    url="https://github.com/Marc-06/essence",
     author="Maxime Wantiez, Yann RITTER",
     author_email=" ",
     license="MIT",
