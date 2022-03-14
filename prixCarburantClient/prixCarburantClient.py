@@ -151,8 +151,7 @@ class PrixCarburantClient(object):
             self.downloadFile("https://www.data.gouv.fr/fr/datasets/r/087dfcbc-8119-4814-8412-d0a387fac561",
                           "PrixCarburants_instantane.zip")
             self.unzipFile("PrixCarburants_instantane.zip", './PrixCarburantsData')
-            self.xmlData = "./PrixCarburantsData/PrixCarburants_quotidien_" + \
-                 aDaybefore.strftime("%Y%m%d") + ".xml"
+            self.xmlData = "./PrixCarburantsData/PrixCarburants_instantane".xml"
             self.stationsXML = self.decodeXML(self.xmlData)
             self.lastUpdate = datetime.today().date()
         except:
