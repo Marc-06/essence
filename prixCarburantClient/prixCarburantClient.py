@@ -145,7 +145,7 @@ class PrixCarburantClient(object):
         aDaybefore = datetime.today() - timedelta(days=1)
         try:
             self.downloadFile(
-                 "https://static.data.gouv.fr/resources/prix-des-carburants-en-france/20181117-111538/active-stations.csv",
+                 "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/prix-des-carburants-en-france-flux-instantane-v2/exports/csv?lang=fr&timezone=Europe%2FParis&use_labels=true&delimiter=%3B",
                  "station.csv")
             self.stations = self.loadStation('station.csv')
             self.downloadFile("https://www.data.gouv.fr/fr/datasets/r/087dfcbc-8119-4814-8412-d0a387fac561",
